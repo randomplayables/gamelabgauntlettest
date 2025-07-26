@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.challenger-setup,
+.guess-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.challenger-setup label,
+.guess-input label {
+  font-weight: bold;
+}
+
+.challenger-setup input,
+.guess-input input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.challenger-setup button,
+.guess-input button,
+.end-screen button {
+  padding: 0.75rem;
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.challenger-setup button:hover,
+.guess-input button:hover,
+.end-screen button:hover {
+  background-color: #4c54ff;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.875rem;
+}
+
+.feedback {
+  margin-top: 1rem;
+}
+
+.feedback h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.guess-history {
+  margin-top: 1rem;
+}
+
+.guess-history h2,
+.guess-history h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.guess-history ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.guess-history li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.end-screen {
+  text-align: center;
+}
+
+.end-screen h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.end-screen p {
+  margin-bottom: 1rem;
+}
